@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: clothing-store-api
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+    # Uncomment dan sesuaikan dengan database mu
+    # envVars:
+    #   - key: MONGODB_URI
+    #     value: your_mongodb_connection_string
+    #   - key: JWT_SECRET
+    #     value: your_jwt_secret
+    #   - key: NODE_ENV
+    #     value: production

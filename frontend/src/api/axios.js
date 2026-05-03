@@ -10,4 +10,17 @@ api.interceptors.request.use((config) => {
   return config;
 });
 
+// Handle error responses
+api.interceptors.response.use(
+  (response) => response,
+  (error) => {
+    if (!error.response) {
+      // Backend offline atau network error
+      console.error('Backend server tidak tersedia');
+      error.message = 'Server tidak tersedia. Harap coba lagi nanti.';
+    }
+    return Promise.reject(error);
+  }
+);
+
 export default api;
