@@ -1,0 +1,41 @@
+.auth-wrapper {
+  min-height: calc(100vh - 64px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-section);
+  padding: 40px 20px;
+}
+
+.auth-card {
+  background: #fff;
+  padding: 48px 40px;
+  width: 100%;
+  max-width: 420px;
+  border: 1px solid var(--border);
+}
+
+.auth-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.auth-sub {
+  font-size: 13px;
+  color: var(--gray-light);
+  margin-bottom: 32px;
+}
+
+.auth-footer {
+  text-align: center;
+  font-size: 13px;
+  color: var(--gray);
+}
+
+.auth-footer a {
+  color: var(--dark);
+  font-weight: 600;
+  text-decoration: underline;
+}

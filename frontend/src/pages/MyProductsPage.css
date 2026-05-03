@@ -1,0 +1,63 @@
+.my-products-table {
+  border: 1px solid var(--border);
+}
+
+.table-header,
+.table-row {
+  display: grid;
+  grid-template-columns: 80px 2fr 120px 100px 220px;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 20px;
+}
+
+.table-header {
+  background: var(--bg-section);
+  border-bottom: 1px solid var(--border);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--gray);
+}
+
+.table-row {
+  border-bottom: 1px solid var(--border);
+  transition: background 0.15s;
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+
+.table-row:hover {
+  background: var(--bg-section);
+}
+
+.table-img {
+  width: 60px;
+  height: 72px;
+  object-fit: cover;
+}
+
+.table-name {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.table-cat {
+  font-size: 12px;
+  color: var(--gray);
+}
+
+.table-price {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.table-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}

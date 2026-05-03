@@ -1,0 +1,67 @@
+.collection-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  gap: 20px;
+}
+
+.filter-categories {
+  display: flex;
+  gap: 8px;
+}
+
+.filter-btn {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 8px 20px;
+  border: 1px solid var(--border);
+  color: var(--gray);
+  transition: all 0.2s;
+  background: #fff;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--dark);
+  color: #fff;
+  border-color: var(--dark);
+}
+
+.search-form {
+  display: flex;
+  gap: 8px;
+}
+
+.search-form input {
+  border: 1px solid var(--border);
+  padding: 10px 14px;
+  font-size: 13px;
+  outline: none;
+  width: 220px;
+  transition: border-color 0.2s;
+  font-family: inherit;
+}
+
+.search-form input:focus {
+  border-color: var(--dark);
+}
+
+.products-grid-col4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
